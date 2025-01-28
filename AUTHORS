@@ -1,0 +1,11 @@
+PostGIS authors:
+
+Mike Dillon <mike@appropriate.io>
+
+And other contributors not specifically named here.
+
+
+Bento Platform authors:
+
+David Lougheed <david.lougheed@gmail.com> created the GitHub actions
+workflow file, copyright McGill University 2025.
