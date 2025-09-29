@@ -26,7 +26,7 @@ FROM postgres:13-bullseye
 
 LABEL maintainer="Bento Platform" \
       org.opencontainers.image.description="PostGIS 3.5.2+dfsg-1.pgdg110+1 spatial database extension with PostgreSQL 13 bullseye" \
-      org.opencontainers.image.source="https://github.com/postgis/docker-postgis"
+      org.opencontainers.image.source="https://github.com/bento-platform/bento_postgis_dist"
 
 ENV POSTGIS_MAJOR=3
 ENV POSTGIS_VERSION=3.5.2+dfsg-1.pgdg110+1
