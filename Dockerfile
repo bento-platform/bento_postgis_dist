@@ -1,6 +1,6 @@
-FROM postgres:13-bullseye
+FROM postgres:18-trixie
 
-# Adapted from https://github.com/postgis/docker-postgis/blob/master/13-3.5/Dockerfile
+# Adapted from https://github.com/postgis/docker-postgis/blob/master/18-3.6/Dockerfile
 # Copyright (c) 2014, Docker PostGIS Authors (See AUTHORS)
 #
 # Permission is hereby granted, free of charge, to any person
@@ -25,11 +25,11 @@ FROM postgres:13-bullseye
 # OTHER DEALINGS IN THE SOFTWARE.
 
 LABEL maintainer="Bento Platform" \
-      org.opencontainers.image.description="PostGIS 3.5.2+dfsg-1.pgdg110+1 spatial database extension with PostgreSQL 13 bullseye" \
+      org.opencontainers.image.description="PostGIS 3.6.0+dfsg-2.pgdg13+1 spatial database extension with PostgreSQL 18 trixie" \
       org.opencontainers.image.source="https://github.com/bento-platform/bento_postgis_dist"
 
 ENV POSTGIS_MAJOR=3
-ENV POSTGIS_VERSION=3.5.2+dfsg-1.pgdg110+1
+ENV POSTGIS_VERSION=3.6.0+dfsg-2.pgdg13+1
 
 RUN apt-get update \
       && apt-cache showpkg postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
