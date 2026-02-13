@@ -1,4 +1,4 @@
-FROM postgres:18-trixie
+FROM docker.io/postgres:18-trixie
 
 # Adapted from https://github.com/postgis/docker-postgis/blob/master/18-3.6/Dockerfile
 # Copyright (c) 2014, Docker PostGIS Authors (See AUTHORS)
@@ -25,11 +25,11 @@ FROM postgres:18-trixie
 # OTHER DEALINGS IN THE SOFTWARE.
 
 LABEL maintainer="Bento Platform" \
-      org.opencontainers.image.description="PostGIS 3.6.1+dfsg-1.pgdg13+1 spatial database extension with PostgreSQL 18 trixie" \
+      org.opencontainers.image.description="PostGIS 3.6.2+dfsg-1.pgdg13+1 spatial database extension with PostgreSQL 18 trixie" \
       org.opencontainers.image.source="https://github.com/bento-platform/bento_postgis_dist"
 
 ENV POSTGIS_MAJOR=3
-ENV POSTGIS_VERSION=3.6.1+dfsg-1.pgdg13+1
+ENV POSTGIS_VERSION=3.6.2+dfsg-1.pgdg13+1
 
 RUN apt-get update \
       && apt-cache showpkg postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
